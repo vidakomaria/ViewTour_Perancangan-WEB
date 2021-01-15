@@ -7,107 +7,119 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="bg_akun">
-    <div class="row col_12" style="background-color: #018BC7;">
-        <table style="width: 100%;">
-            <tr>
-                <td><img src="gambar/logo.png" class="logo_menu"></td>
-                <td>
-                    <nav class="navigasi" style="float: right;">
-                        <a href="Home.html">Home</a>
-                        <a href="Tour.html">Tour</a>
-                        <a href="Info.html">Info</a>
-                        <a href="Blog.html">Blog</a>
-                        <a href="Galery.html">Galery Travel</a>
-                        <a href="Login.html" class="active"><img src="gambar/akun.png" style="width: 30px;" alt=""></a>
-                    </nav>
-                </td>
-            </tr>
-        </table>
+<body class="bg_akun">
+    <div class="row_nav" style="background-color: #018BC7;">
+        <div class="logo_menu"><img src=" gambar/logo.png " class="logo_menu "></div>
+        <div class="kotak">
+            <nav style="float: right;">
+                <a href="Home.html" class=" kotak">Home</a>
+                <a href="Tour.html" class="kotak">Tour</a>
+                <a href="Info.html" class="kotak">Info</a>
+                <a href="Blog.html" class="kotak">Blog</a>
+                <a href="Galery.html" class="kotak">Galery Travel</a>
+                <a href="Login.html" class="active kotak"><img src="gambar/akun.png" style="width: 25px;" alt=""></a>
+            </nav>
+        </div>
     </div>
 </body>
 
 
-<div class="row">
-    <div class="col_3"></div>
+<div class="row" style="justify-content: center;">
+    <div class="container_register" style="flex-direction: column;">
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <div style="flex-direction: column;">
+                <div class="row" style="flex-direction: column;">
+                    <div>
+                        <p>
+                            <label for="user">Username:</label> <br>
+                            <input type="text" placeholder="Username" required class="input_register" id="user">
+                        </p>
 
-    <div class="col_6 row">
-        <form>
-            <table class="container_register font">
-                <tr>
-                    <td>
-                        <label for="user">Username:</label> <br>
-                        <input class="input_register" type="text" id="user" name="username" value="Username">
-                    </td>
-                    <td>
-                        <label for="phone">Phone Number:</label> <br>
-                        <input class="input_register" type="tel" id="phone" name="phoneNumber" value="+0x-xxxx-xx">
-                    </td>
-                </tr>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="email">E-mail:</label> <br>
+                            <input type="email" placeholder="E-mail" required class="input_register" id="email">
+                        </p>
 
-                <tr>
-                    <td>
-                        <label for="email">E-mail:</label> <br>
-                        <input class="input_register" type="email" id="email" name="email" value="E-mail">
-                    </td>
-                    <td>
-                        <label for="birth place">Birth Place:</label> <br>
-                        <input class="input_register" type="text" id="birth place" name="birthPlace" value="Birth Place">
-                    </td>
-                </tr>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="pw"> Password:</label> <br>
+                            <input type="password" placeholder="Password" required class="input_register" id="password">
+                        </p>
 
-                <tr>
-                    <td>
-                        <label for="pw"> Password:</label> <br>
-                        <input class="input_register" type="password" id="pw" name="password" value="Password">
-                    </td>
-                    <td>
-                        <label for="birth date">Birth Date:</label> <br>
-                        <input class="input_register" type="date" id="birth date" name="birthDate">
-                    </td>
-                </tr>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="fullname"> Full Name:</label> <br>
+                            <input type="text" placeholder="Full Name" required class="input_register" id="fullName">
+                        </p>
 
-                <tr>
-                    <td>
-                        <label for="fullname"> Full Name:</label> <br>
-                        <input class="input_register" type="text" id="fullname" name="fullName" value="Full Name">
-                    </td>
-                    <td>
-                        <label for="address"> Address:</label> <br>
-                        <input class="input_register" type="text" id="address" name="address" value="Address">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
+                    </div>
+                    <div>
                         <p>Gender:<br>
                             <input type="radio" name="gender" value="Male">Male
                             <input type="radio" name="gender" value="Female">Female
                         </p>
-                    </td>
-                    <td>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row" style="flex-direction: column;">
+                <div>
+                    <p>
+                        <label for="phone">Phone Number:</label> <br>
+                        <input type="tel" placeholder="+620-000-000" required class="input_register" id="phone">
+                    </p>
+
+                </div>
+                <div>
+                    <p>
+                        <label for="birth place">Birth Place:</label> <br>
+                        <input type="text" placeholder="Birth Place" required class="input_register" id="birthPlace">
+                    </p>
+
+                </div>
+                <div>
+                    <p>
+                        <label for="birth date">Birth Date:</label> <br>
+                        <input type="date" placeholder="" required class="input_register" id="birthDate">
+                    </p>
+
+                </div>
+                <div>
+                    <p>
+                        <label for="address"> Address:</label> <br>
+                        <input type="text" placeholder="Address" required class="input_register" id="address">
+                    </p>
+
+                </div>
+                <div>
+                    <p>
                         <label for="country"> Country:</label> <br>
-                        <input class="input_register" type="text" id="country" name="country" value="Country">
-                    </td>
-                </tr>
+                        <input type="text" placeholder="Country" required class="input_register" id="country">
+                    </p>
+                </div>
 
-                <tr class="button_submit">
-                    <td>
-                        <button type="submit" class=" center"><a href="Akun.html">REGISTER</a></button>
-                    </td>
-                    <td>
-                        <button type="reset" class=" center"><a href="">RESET</a></button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+            </div>
+        </div>
 
-        <a class="font right" style="color: whitesmoke; font-weight: bold;" href="Login.html">Back</a>
+        <div>
+            <div class="button_submit" style="text-align: center;">
+                <br>
+                <button type="submit"><a href="Akun.html">REGISTER</a></button>
+                <button type="reset"><a href="">RESET</a></button>
+            </div>
+        </div>
+        <div class="font" style="text-align: right; color: ;">
+            <a href="Login.html" style="color: white;">Back</a>
+        </div>
     </div>
 
-    <div class="col_3 "></div>
 </div>
-
 
 
 </html>
