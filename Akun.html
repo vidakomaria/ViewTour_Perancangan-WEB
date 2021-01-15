@@ -8,113 +8,100 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <div class="row col_12" style="background-color: #018BC7;">
-        <table style="width: 100%;">
-            <tr>
-                <td><img src="gambar/logo.png" class="logo_menu"></td>
-                <td>
-                    <nav class="navigasi" style="float: right;">
-                        <a href="Home.html">Home</a>
-                        <a href="Tour.html">Tour</a>
-                        <a href="Info.html">Info</a>
-                        <a href="Blog.html">Blog</a>
-                        <a href="Galery.html">Galery Travel</a>
-                        <a href="Login.html" class="active"><img src="gambar/akun.png" style="width: 30px;" alt=""></a>
-                    </nav>
-                </td>
-            </tr>
-        </table>
+<body class="">
+    <div class="row_nav" style="background-color: #018BC7;">
+        <div class="logo_menu"><img src=" gambar/logo.png " class="logo_menu "></div>
+        <div class="kotak">
+            <nav style="float: right;">
+                <a href="Home.html" class=" kotak">Home</a>
+                <a href="Tour.html" class="kotak">Tour</a>
+                <a href="Info.html" class="kotak">Info</a>
+                <a href="Blog.html" class="kotak">Blog</a>
+                <a href="Galery.html" class="kotak">Galery Travel</a>
+                <a href="Login.html" class="active kotak"><img src="gambar/akun.png" style="width: 25px;" alt=""></a>
+            </nav>
+        </div>
     </div>
 </body>
 
+<div class="row">
+    <div class="side_navigation" style="flex-direction: column; ">
+        <div>
+            <button class="navigation_link" onclick="openAkun(event, 'profile')" id="defaultOpen">Profile</button>
+        </div>
+        <div>
+            <button class="navigation_link" onclick="openAkun(event, 'security')">Security</button>
+        </div>
 
-<div class="row col_12">
-    <table style="width: 100%; height: 100%; background-color: #E9E9E9; position: fixed;">
-        <tr>
-            <td class="side_navigation">
-                <button class="navigation_link" onclick="openAkun(event, 'profile')" id="defaultOpen">Profile</button>
-                <button class="navigation_link" onclick="openAkun(event, 'security')">Security</button>
-            </td>
+    </div>
+    <div id="profile" class="conten_akun" style="background-color:white">
+        <div class="row">
+            <div style="width: 200px; line-height: 50px;">
+                <div>Username</div>
+                <div>Name </div>
+                <div>Email </div>
+                <div>Birth Place </div>
+                <div>Birth Date </div>
+                <div>Address </div>
+                <div>Country </div>
+                <div>Gender </div>
+            </div>
+            <div style="color: black; width: 200px; line-height: 50px;">
+                <div>'username' <br></div>
+                <div>'name' <br></div>
+                <div>'email' <br></div>
+                <div>'birth place' <br></div>
+                <div>'birth date' <br></div>
+                <div>'address'</div>
+                <div>'country'</div>
+                <div>'gender'</div>
+            </div>
+        </div>
+    </div>
+    <div id="security" class="conten_akun">
+        <div class="row" style="flex-direction: column;">
+            <div class="row" style="flex-direction: row;">
+                <div style="width: 250px;">Username</div>
+                <div style="color: black;"><input class=" label_login " type="text " id="username " name="username " placeholder="Username "></div>
+            </div>
+            <div class="row " style="flex-direction: row; ">
+                <div style="width: 250px;">Old Password</div>
+                <div style="color: black;"><input class="label_login" type="password" id="password" name="password" placeholder="Password"></div>
+            </div>
+            <div class="row" style="flex-direction: row;">
+                <div style="width: 250px;">Confirmed Password</div>
+                <div style="color: black;"><input class=" label_login " type="password " id="new_password " name="new_password " placeholder="Confirm Password "></div>
 
-            <td style="width: 100%;">
-                <table id="profile" class="conten_akun">
-                    <tr>
-                        <td>Username</td>
-                        <td style="color: black;">'username'</td>
-                    </tr>
-                    <tr>
-                        <td>Name</td>
-                        <td style="color: black;">'name'</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td style="color: black;">'email'</td>
-                    </tr>
-                    <tr>
-                        <td>Birth Place</td>
-                        <td style="color: black;">'birth place'</td>
-                    </tr>
-                    <tr>
-                        <td>Birth Date</td>
-                        <td style="color: black;">'birth date'</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td style="color: black;">'address'</td>
-                    </tr>
-                    <tr>
-                        <td>Country</td>
-                        <td style="color: black;">'country'</td>
-                    </tr>
-                    <tr>
-                        <td>Gender</td>
-                        <td style="color: black;">'gender'</td>
-                    </tr>
-                </table>
-                <table id="security" class="conten_akun">
-                    <tr>
-                        <td>Username</td>
-                        <td><input class="label_login" type="text" id="username" name="username" value="Username"></td>
-                    </tr>
-                    <tr>
-                        <td>Old Password</td>
-                        <td><input class="label_login" type="password" id="password" name="password" value="password"></td>
-                    </tr>
-                    <tr>
-                        <td>Confirmed Password</td>
-                        <td><input class="label_login" type="password" id="new_password" name="new_password" value="password"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="button_submit"><button type="submit"><a href="">Submit</a></button></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+            </div>
+            <div class="button_submit ">
+                <button type="submit "><a href=" ">Submit</a></button>
+            </div>
+
+        </div>
+    </div>
 </div>
+
 
 <script>
     function openAkun(evt, akun) {
         var i, conten_akun, navigation_link;
 
-        conten_akun = document.getElementsByClassName("conten_akun");
+        conten_akun = document.getElementsByClassName("conten_akun ");
         for (i = 0; i < conten_akun.length; i++) {
-            conten_akun[i].style.display = "none";
+            conten_akun[i].style.display = "none ";
         }
 
-        navigation_link = document.getElementsByClassName("navigation_link");
+        navigation_link = document.getElementsByClassName("navigation_link ");
         for (i = 0; i < navigation_link.length; i++) {
-            navigation_link[i].className = navigation_link[i].className.replace(" active", "");
+            navigation_link[i].className = navigation_link[i].className.replace(" active ", " ");
         }
 
-        document.getElementById(akun).style.display = "block";
-        evt.currentTarget.className += " active";
+        document.getElementById(akun).style.display = "block ";
+        evt.currentTarget.className += " active ";
 
     }
 
-    document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen ").click();
 </script>
 
 </html>
