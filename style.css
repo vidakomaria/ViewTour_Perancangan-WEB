@@ -6,72 +6,51 @@ body {
     padding: 0px;
 }
 
-.col_1 {
-    width: 8, 333%;
-    display: inline-block;
-}
-
-.col_2 {
-    width: 16, 666%;
-    display: inline-block;
-}
-
-.col_3 {
-    width: 25%;
-    display: inline-block;
-}
-
-.col_4 {
-    width: 33, 333%;
-    display: inline-block;
-}
-
-.col_5 {
-    width: 41, 666%;
-    display: inline-block;
-}
-
-.col_6 {
-    width: 50%;
-    display: inline-block;
-}
-
-.col_7 {
-    width: 58, 333%;
-    display: inline-block;
-}
-
-.col_8 {
-    width: 66, 666%;
-    display: inline-block;
-}
-
-.col_9 {
-    width: 75%;
-    display: inline-block;
-}
-
-.col_10 {
-    width: 83, 333%;
-    display: inline-block;
-}
-
-.col_11 {
-    width: 91, 666%;
-    display: inline-block;
-}
-
-.col_12 {
-    width: 100%;
-    display: inline-block;
-}
-
 .row {
-    display: table;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
 }
 
-#bg_akun {
+.row_nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #018BC7;
+}
+
+.kotak {
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
+    width: 100px;
+    padding-top: 20px;
+}
+
+.logo_menu {
+    width: 180px;
+}
+
+.kotak a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-family: boba panda;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kotak a:hover {
+    background-color: #E9961B;
+}
+
+.kotak a.active {
+    background-color: #E9961B;
+    color: white;
+}
+
+.bg_akun {
     background-image: url("gambar/bg_akun.png");
     background-size: 100%;
     background-attachment: fixed;
@@ -81,15 +60,15 @@ body {
 .bg_home {
     background-image: url("gambar/bg_home.png");
     background-size: 100% 100%;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 .bg_tour {
     background-image: url("gambar/bg_tour.png");
     background-size: 100%;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 .bg_blog {
@@ -125,19 +104,21 @@ body {
 .container_register {
     border-radius: 20px;
     background-color: #FFFFFF;
-    height: 100%;
-    width: 100%;
+    height: 390px;
+    width: 640px;
     padding: 8px;
     margin: 10px;
 }
 
 .container_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 20px;
     background-color: #FFFFFF;
     height: 270px;
     width: 350px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px;
 }
 
 .font {
@@ -191,13 +172,6 @@ body {
     text-align: center;
 }
 
-.logo_menu {
-    width: 197px;
-    height: 84px;
-    float: left;
-    display: block;
-}
-
 .button_submit button {
     border-radius: 13px;
     border-color: #707070;
@@ -218,37 +192,9 @@ body {
     display: inline-block;
 }
 
-.navigasi {
-    background-color: #018BC7;
-    padding-top: 13px;
-}
-
-.navigasi a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    font-family: boba panda;
-    font-size: 25px;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
-
-.navigasi a:hover {
-    background-color: #E9961B;
-}
-
-.navigasi a.active {
-    background-color: #E9961B;
-    color: white;
-}
-
 .side_navigation {
     float: left;
     width: 300px;
-    height: 100%;
 }
 
 .side_navigation button {
@@ -273,18 +219,21 @@ body {
 }
 
 .conten_akun {
-    display: none;
+    display: flex;
+    flex-direction: row;
     float: left;
     background-color: white;
     font-family: boba panda;
     font-size: 20px;
     color: #6E6E6E;
-    width: 100%;
-    height: 100%;
+    float: 1;
+    padding: 20px;
+    padding-left: 40px;
+    word-spacing: 10px;
 }
 
-.conten_akun td {
-    padding: 20px;
+.data_akun {
+    color: black;
     padding-left: 40px;
 }
 
@@ -310,15 +259,24 @@ body {
 }
 
 .home_conten {
+    display: flex;
+    flex-direction: row;
+}
+
+.deskripsi {
     color: white;
     font-family: boba panda;
     font-size: 20px;
-}
-
-.home_conten td {
-    border-radius: 15px;
+    width: 40%;
     padding: 0px 30px 0px 30px;
     margin: 10px;
+}
+
+.nama_home {
+    font-family: billion dreams;
+    font-size: 150px;
+    color: white;
+    flex: 1;
 }
 
 .option select {
@@ -338,6 +296,9 @@ body {
 }
 
 .tour {
+    background-color: #00000008;
+    width: 320px;
+    height: 280px;
     text-align: center;
     font-family: boba panda;
     font-size: 23px;
@@ -359,12 +320,6 @@ body {
     color: rgba(0, 0, 0, 0.185);
 }
 
-.tour td {
-    padding: 5px 10px 5px 10px;
-    background-color: #dbdbdb1a;
-    border-radius: 10px;
-}
-
 .lokasi,
 .lokasi img,
 .lokasi a {
@@ -374,6 +329,7 @@ body {
     letter-spacing: 0px;
     color: #4C4C4C;
     height: 20px;
+    margin: 0px;
 }
 
 .harga header {
@@ -392,14 +348,7 @@ body {
     letter-spacing: 0px;
     color: #000000;
     padding: 20px;
-}
-
-.info_harga p {
-    text-align: left;
-    font-family: boba panda;
-    font-size: 20px;
-    letter-spacing: 0px;
-    color: #000000;
+    flex: 2;
 }
 
 .cek_harga {
@@ -409,9 +358,9 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
     color: white;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px;
+    width: 380px;
+    height: 320px;
 }
 
 .cek_harga input {
@@ -421,8 +370,8 @@ body {
     height: 30px;
 }
 
-.cek_harga td {
-    padding: 10px;
+.cek_harga label {
+    font-size: 20px;
 }
 
 .blog {
@@ -430,16 +379,22 @@ body {
     font-family: boba panda;
     font-size: 23px;
     letter-spacing: 1px;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     border-radius: 10px;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .blog img {
-    width: 300px;
+    width: 200px;
+    height: 100%;
+    padding-right: 20px;
 }
 
 .info {
+    width: 538px;
     text-align: center;
     font-family: boba panda;
     font-size: 23px;
