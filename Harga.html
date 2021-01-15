@@ -9,84 +9,74 @@
 </head>
 
 <body>
-    <div class="row col_12" style="background-color: #018BC7;">
-        <table style="width: 100%;">
-            <tr>
-                <td><img src="gambar/logo.png" class="logo_menu"></td>
-                <td>
-                    <nav class="navigasi" style="float: right;">
-                        <a href="index.html">Home</a>
-                        <a href="Tour.html" class="active">Tour</a>
-                        <a href="Info.html">Info</a>
-                        <a href="Blog.html">Blog</a>
-                        <a href="Galery.html">Galery Travel</a>
-                        <a href="Login.html"><img src="gambar/akun.png" style="width: 30px;" alt=""></a>
-                    </nav>
-                </td>
-            </tr>
-        </table>
+    <div class="row_nav" style="background-color: #018BC7;">
+        <div class="logo_menu"><img src=" gambar/logo.png " class="logo_menu "></div>
+        <div class="kotak">
+            <nav style="float: right;">
+                <a href="Home.html" class="kotak">Home</a>
+                <a href="Tour.html" class="active kotak">Tour</a>
+                <a href="Info.html" class="kotak">Info</a>
+                <a href="Blog.html" class="kotak">Blog</a>
+                <a href="Galery.html" class="kotak">Galery Travel</a>
+                <a href="Login.html" class="kotak"><img src="gambar/akun.png" style="width: 25px;" alt=""></a>
+            </nav>
+        </div>
     </div>
 </body>
 
-<div class="row harga">
-    <header>Pantai Pasir Putih Malikan (PAPUMA) Jember</header>
-</div>
-<div class="row ">
-    <table>
-        <tr>
-            <td style="width: 50%;">
-                <table class="info_harga">
-                    <tr>
-                        <td>
-                            <video src="vidio/Papuma Beach - CINEMATIC VIDEO.mp4" width="420px" controls></video>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> INFORMASI PANTAI PAPUMA</td>
-                    </tr>
-                    <tr class="lokasi">
-                        <td> <img src="gambar/lokasi.png" style="width: 20px;"> Jember, Jawa Timur, Indonesia
-                            <p style="text-align: right;">Sunday 11/10 10:00</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Pantai Papuma dikenal juga sebagai Pantai Tanjung Papuma, ya karena letaknya yang menjorok laut dan disebut sebagai tanjung. Seperti kita tahu tanjung adalah daratan kecil yang menjorok ke laut, sedangkan Papuma berasal dari
-                                akronim "pasir putih malikan". Malikan adalah nama yang diberikan oleh Perhutani setelah mulai membuka lokasi wisata ini. <br> Artikel ini telah tayang di Kompas.com dengan judul "Papuma, Pantai Terindah di Jatim ", <br>                                Sumber :
-                                <a href="https://travel.kompas.com/read/2014/07/26/141900627/Papuma.Pantai.Terindah.di.Jatim.?page=all">https://travel.kompas.com/read/2014/07/26/141900627/Papuma.Pantai.Terindah.di.Jatim.?page=all</a>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
 
-            <td style="width: 50%;">
-                <table class="cek_harga">
-                    <tr style="text-align: center; font-size: 40px;">
-                        <td colspan="2">CEK HARGA</td>
-                    </tr>
-                    <tr>
-                        <td><label for="tgl_mulai">Dari</label> <br>
-                            <input type="date" name="tgl_mulai">
-                        </td>
-                        <td><label for="tgl_selesai">Sampai</label> <br>
-                            <input type="date" name="tgl_selesai"></td>
-                    </tr>
+<div class="row" style="flex-wrap: wrap;">
+    <div class="harga" style="padding-left: 20px; text-align: left;">
+        <header>Pantai Pasir Putih Malikan (PAPUMA) Jember</header>
+    </div>
 
-                    <tr>
-                        <td><label for="dewasa">Dewasa</label> <br>
-                            <input type="number" name="dewasa" value="0">
-                        </td>
-                        <td><label for="balita">Balita (0-3)th</label> <br>
-                            <input type="number" name="balita" value="0"></td>
-                    </tr>
-                    <tr class="button_submit" style="text-align: center;">
-                        <td colspan="2"><button style="width: 200px;"><a href="">CEK HARGA</a></button></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <div class="info_harga" style="font-size: 20px; width: 90%;">
+        <div>
+            <video src="vidio/Papuma Beach - CINEMATIC VIDEO.mp4" width="420px" controls></video>
+            <p style="font-size: 40px;">INFORMASI PANTAI PAPUMA</p>
+        </div>
+        <div>
+            <img src="gambar/lokasi.png" class="lokasi" style="width: 20px;"> Jember, Jawa Timur, Indonesia
+            <p style="text-align: right;">Sunday 11/10 10:00</p>
+        </div>
+        <div style="text-align: left;">
+            <p>Pantai Papuma dikenal juga sebagai Pantai Tanjung Papuma, ya karena letaknya yang menjorok laut dan disebut sebagai tanjung. Seperti kita tahu tanjung adalah daratan kecil yang menjorok ke laut, sedangkan Papuma berasal dari akronim "pasir
+                putih malikan". Malikan adalah nama yang diberikan oleh Perhutani setelah mulai membuka lokasi wisata ini. <br> Artikel ini telah tayang di Kompas.com dengan judul "Papuma, Pantai Terindah di Jatim ", <br> Sumber :
+                <a href="https://travel.kompas.com/read/2014/07/26/141900627/Papuma.Pantai.Terindah.di.Jatim.?page=all">https://travel.kompas.com/read/2014/07/26/141900627/Papuma.Pantai.Terindah.di.Jatim.?page=all</a>
+            </p>
+        </div>
+    </div>
+    <div class="cek_harga row" style=" flex-direction: column;">
+        <div>
+            <p style="font-size: 40px;text-align: center;">CEK HARGA</p>
+        </div>
+        <div class="row" style="flex-direction: row; justify-content: space-around;">
+            <div>
+                <label for="tgl_mulai">Dari</label> <br>
+                <input type="date" name="tgl_mulai">
+            </div>
+            <div>
+                <label for="tgl_selesai">Sampai</label> <br>
+                <input type="date" name="tgl_selesai">
+            </div>
+        </div>
+        <div class="row" style="flex-direction: row;justify-content: space-around;">
+            <div>
+                <label for="dewasa">Dewasa</label> <br>
+                <input type="number" name="dewasa" value="0">
+            </div>
+            <div>
+                <label for="balita">Balita (0-3)th</label> <br>
+                <input type="number" name="balita" value="0">
+            </div>
+        </div>
+        <div>
+            <p class="button_submit" style="text-align: center;">
+                <button style="width: 200px;"><a href="">CEK HARGA</a></button>
+            </p>
+        </div>
+    </div>
 </div>
+
 
 </html>
